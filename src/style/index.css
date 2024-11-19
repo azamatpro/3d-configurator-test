@@ -15,3 +15,23 @@ canvas {
   align-items: center;
   justify-content: center;
 }
+
+.choose-colors {
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.choose-colors.column {
+  flex-direction: column;
+}
+
+.choose-colors.row {
+  flex-direction: row;
+}

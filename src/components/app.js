@@ -1,26 +1,13 @@
-import TeapotSean from './components/configurator';
-import Configurator from './components/configurator';
-import Ui from './components/ui';
+import TeapotSean from './canvas/TeapotSean';
+import ChooseColors from './ui/ChooseColors';
 
-const App = () => (
-  <div id='app'>
-    <div
-      style={{
-        position: 'fixed',
-        top: '0',
-        backgroundColor: '#fff',
-        width: '100%',
-        display: 'flex',
-        gap: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <h1>3D Product Configurator</h1>
-      <Ui />
+const App = () => {
+  return (
+    <div id='app'>
+      <ChooseColors />
+      <TeapotSean />
     </div>
-    <TeapotSean />
-  </div>
-);
+  );
+};
 
 export default App;

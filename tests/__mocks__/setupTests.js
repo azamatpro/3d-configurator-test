@@ -1,6 +1,12 @@
-import { configure } from "enzyme";
-import Adapter from "enzyme-adapter-preact-pure";
+import { TextEncoder, TextDecoder } from 'util';
 
-configure({
-  adapter: new Adapter(),
-});
+// Polyfill
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+
+// Mocking fetch if necessary
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    json: () => Promise.resolve({}),
+  })
+);
