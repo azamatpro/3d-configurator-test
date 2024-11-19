@@ -139,6 +139,7 @@ The configurator is fully responsive and supports:
 
 - Performance may vary on lower-end mobile devices
 - WebGL support required
+- Refering to 3rd parties on running tests
 
 ## 📈 Future Improvements
 
