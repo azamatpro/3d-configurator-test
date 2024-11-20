@@ -30,6 +30,9 @@ Before you begin, ensure you have the following installed:
 # install dependencies
 npm install
 
+# install babel/preset-react using --save-dev flag
+npm install --save-dev @babel/preset-react
+
 # serve with hot reload at localhost:8080
 npm run dev
 
